@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Frontend Quiz App",
+        "description": "A functional multi-choice quiz application featuring category selection, progress tracking, and score calculation.",
+        "thumbnail": "./assets/images/thumbnails/quiz-app.jpg",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "JSON"
+        ],
+        "difficulty": "Advanced",
+        "live_url": "./frontend-quiz-app/",
+        "repo_url": "https://github.com/yourusername/fm-gallery/tree/main/frontend-quiz-app",
+        "status": "Completed"
+    }
+]

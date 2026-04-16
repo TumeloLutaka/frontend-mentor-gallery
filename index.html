@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script defer src="./index.js"></script>
+
+    <title>Frontend Mentor Gallery</title>
+  </head>
+  <body>
+    <header class="main-header container">
+      <a class="main-header__logo" href="#"> Tumelo.dev </a>
+
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
+          <li>
+            <a href="https://github.com/TumeloLutaka">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.frontendmentor.io/profile/TumeloLutaka"
+              >Frontend Mentor</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-header__theme-switch">
+        <img
+          class="main-header__theme-icon"
+          src="./assets/images/sun-regular-full.svg"
+          alt=""
+        />
+        <label for="main-header__theme-checkbox">
+          <input
+            id="main-header__theme-checkbox"
+            class="main-header__theme-checkbox hidden"
+            type="checkbox" />
+          <div class="main-header__theme-toggle"></div
+        ></label>
+        <img
+          class="main-header__theme-icon"
+          src="./assets/images/moon-regular-full.svg"
+          alt=""
+        />
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1 class="hero__heading heading">
+          Frontend Mentor:
+          <span style="display: block">Technical Solutions Gallery</span>
+        </h1>
+        <p class="hero__text">
+          An active repository documenting the implementation of responsive UI
+          components and logic-heavy web applications. Developed with a focus on
+          clean code standards and vanilla architectural patterns.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="solutions__heading heading">Solutions</h2>
+
+        <div id="solutions__cards-wrapper" class="solutions__cards-wrapper">
+          <article class="solutions__card">
+            <div class="solutions__card-text-wrapper">
+              <h3 class="solutions__card-heading heading">Frontend Quiz App</h3>
+              <p class="solutions__card-desc">
+                A quiz application that test you on four web development
+                subjects. HTML, CSS, JavaScript, and Accessibility
+              </p>
+            </div>
+
+            <div class="solutions__links">
+              <a class="solutions__link" href="./frontend-quiz-app/"
+                >Live Site</a
+              >
+              <a class="solutions__link" href="./frontend-quiz-app/"
+                >View Code</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>Created with 💜 to keep my GitHub tidy.</p>
+      <p>
+        &copy; 2026
+        <a href="https://github.com/TumeloLutaka/">Tumelo Lutaka</a>. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+</html>

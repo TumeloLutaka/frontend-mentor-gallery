@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+
+    <script defer src="./main.js"></script>
+
+    <title>Frontend Mentor | Frontend quiz app</title>
+  </head>
+  <body>
+    <header class="main-header | container">
+      <div id="main-header__topic" class="topic | visibility-hidden">
+        <div class="topic-icon__wrapper topic-icon__wrapper--accessibility">
+          <img />
+        </div>
+        <p class="topic-icon__text">Accessibility</p>
+      </div>
+
+      <div class="main-header__theme-wrapper">
+        <svg
+          class="main-header__theme-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#626C7F"
+            d="M12 1.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 1 1-1.5 0v-1.5A.75.75 0 0 1 12 1.5Zm0 15a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0-1.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm9.75-2.25a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 1 0 0 1.5h1.5ZM12 19.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 1 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75Zm-8.25-6.75a.75.75 0 1 0 0-1.5h-1.5a.75.75 0 1 0 0 1.5h1.5Zm.969-8.031a.75.75 0 0 1 1.062 0l1.5 1.5a.751.751 0 0 1-1.062 1.062l-1.5-1.5a.75.75 0 0 1 0-1.062Zm1.062 14.562a.75.75 0 1 1-1.062-1.06l1.5-1.5a.75.75 0 1 1 1.062 1.06l-1.5 1.5Zm13.5-14.562a.75.75 0 0 0-1.062 0l-1.5 1.5a.751.751 0 0 0 1.062 1.062l1.5-1.5a.75.75 0 0 0 0-1.062Zm-1.062 14.562a.75.75 0 0 0 1.062-1.06l-1.5-1.5a.75.75 0 0 0-1.062 1.06l1.5 1.5Z"
+          />
+        </svg>
+
+        <label class="main-header__toggle" for="theme-toggle">
+          <input
+            class="main-header__toggle-input"
+            type="checkbox"
+            name=""
+            id="theme-toggle"
+          />
+          <div class="main-header__toggle-fill"></div>
+        </label>
+
+        <svg
+          class="main-header__theme-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#626C7F"
+            d="M11.775 4.522A7.5 7.5 0 1 1 4.898 16.09c2.104-.57 4.974-1.953 6.24-5.326.828-2.211.876-4.408.637-6.241ZM20.184 12a8.997 8.997 0 0 0-9.315-8.994.75.75 0 0 0-.713.888c.345 1.821.42 4.092-.424 6.342-1.2 3.201-4.203 4.26-6.115 4.606a.75.75 0 0 0-.542 1.066A9 9 0 0 0 20.184 12Z"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="menu">
+        <div class="menu__welcome-text">
+          <h1 class="section__heading">
+            Welcome to the
+            <span class="section__heading-span">Frontend Quiz!</span>
+          </h1>
+          <p class="menu__welcome-prompt">Pick a subject to get started.</p>
+        </div>
+
+        <!-- Quiz menu start -->
+        <div class="menu__options">
+          <button class="menu__button" type="button">
+            <div class="topic">
+              <div class="topic-icon__wrapper topic-icon__wrapper--html">
+                <svg
+                  class="topic-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 40 40"
+                >
+                  <path
+                    fill="#FF7E35"
+                    d="M24.508 7.607a1.25 1.25 0 0 1 .634 1.65l-10 22.5a1.25 1.25 0 1 1-2.284-1.015l10-22.5a1.251 1.251 0 0 1 1.65-.635ZM10.832 13.44a1.249 1.249 0 0 1 .1 1.765L6.674 20l4.263 4.795a1.25 1.25 0 1 1-1.87 1.66l-5-5.625a1.25 1.25 0 0 1 0-1.66l5-5.625a1.25 1.25 0 0 1 1.764-.105Zm18.337 0a1.25 1.25 0 0 1 1.765.105l5 5.625a1.25 1.25 0 0 1 0 1.66l-5 5.625a1.25 1.25 0 1 1-1.87-1.66L33.327 20l-4.262-4.795a1.25 1.25 0 0 1 .105-1.765Z"
+                  />
+                </svg>
+              </div>
+              <p class="topic-icon__text">HTML</p>
+            </div>
+          </button>
+          <button class="menu__button" type="button">
+            <div class="topic">
+              <div class="topic-icon__wrapper topic-icon__wrapper--css">
+                <svg
+                  class="topic-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 40 40"
+                >
+                  <path
+                    fill="#2FD887"
+                    d="M10 2.505a1.25 1.25 0 0 0-1.25 1.25V21.25a5 5 0 0 0 5 5H15v6.25a4.999 4.999 0 0 0 9.615 1.913c.25-.607.38-1.257.38-1.913v-6.25h1.255a5 5 0 0 0 5-5V3.755A1.25 1.25 0 0 0 30 2.505H10ZM28.75 17.5h-17.5V5.005h7.5V8.76a1.25 1.25 0 0 0 2.5 0V5.005h2.5v6.24a1.25 1.25 0 0 0 2.5 0v-6.24h2.5V17.5Zm-17.5 3.75V20h17.5v1.25a2.5 2.5 0 0 1-2.5 2.5h-2.505a1.25 1.25 0 0 0-1.25 1.25v7.5a2.497 2.497 0 1 1-4.995 0V25a1.25 1.25 0 0 0-1.25-1.25h-2.5a2.5 2.5 0 0 1-2.5-2.5Z"
+                  />
+                </svg>
+              </div>
+              <p class="topic-icon__text">CSS</p>
+            </div>
+          </button>
+
+          <button class="menu__button" type="button">
+            <div class="topic">
+              <div class="topic-icon__wrapper topic-icon__wrapper--javascript">
+                <svg
+                  class="topic-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 40 40"
+                >
+                  <path
+                    fill="#306AFF"
+                    d="M21.25 18.75A3.75 3.75 0 0 1 25 15h3.75a1.25 1.25 0 0 1 0 2.5H25a1.25 1.25 0 0 0-1.25 1.25V20A1.25 1.25 0 0 0 25 21.25h1.25A3.75 3.75 0 0 1 30 25v1.25A3.75 3.75 0 0 1 26.25 30H22.5a1.25 1.25 0 0 1 0-2.5h3.75a1.25 1.25 0 0 0 1.25-1.25V25a1.25 1.25 0 0 0-1.25-1.25H25A3.75 3.75 0 0 1 21.25 20v-1.25ZM20 16.25a1.25 1.25 0 0 0-2.5 0v10a1.25 1.25 0 0 1-1.25 1.25h-2.5a1.25 1.25 0 0 0 0 2.5h2.5A3.75 3.75 0 0 0 20 26.25v-10Zm-15-5A6.25 6.25 0 0 1 11.25 5h17.5A6.25 6.25 0 0 1 35 11.25v17.5A6.25 6.25 0 0 1 28.75 35h-17.5A6.25 6.25 0 0 1 5 28.75v-17.5Zm6.25-3.75a3.75 3.75 0 0 0-3.75 3.75v17.5a3.75 3.75 0 0 0 3.75 3.75h17.5a3.75 3.75 0 0 0 3.75-3.75v-17.5a3.75 3.75 0 0 0-3.75-3.75h-17.5Z"
+                  />
+                </svg>
+              </div>
+              <p class="topic-icon__text">JavaScript</p>
+            </div>
+          </button>
+          <button class="menu__button" type="button">
+            <div class="topic">
+              <div
+                class="topic-icon__wrapper topic-icon__wrapper--accessibility"
+              >
+                <svg
+                  class="topic-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 40 40"
+                >
+                  <path
+                    fill="#A729F5"
+                    d="M16.875 8.125a3.125 3.125 0 1 1 6.25 0 3.125 3.125 0 0 1-6.25 0ZM20 2.5a5.625 5.625 0 0 0-5.475 6.915l-4.03-1.625a4 4 0 0 0-5.19 2.18 3.95 3.95 0 0 0 2.175 5.175l5.02 2.027v5.96l-4.532 8.525a3.98 3.98 0 0 0 7.024 3.738L20 25.975l5.01 9.42a3.978 3.978 0 0 0 7.025-3.735L27.5 23.13v-5.957l5.02-2.028a3.95 3.95 0 0 0 2.175-5.175 4 4 0 0 0-5.19-2.183l-4.027 1.628A5.626 5.626 0 0 0 20 2.5ZM7.618 10.922a1.5 1.5 0 0 1 1.94-.817l8.57 3.463a5 5 0 0 0 3.744 0l8.57-3.463a1.5 1.5 0 0 1 1.94.817 1.45 1.45 0 0 1-.8 1.905l-5.02 2.025A2.5 2.5 0 0 0 25 17.175v5.957c0 .41.1.814.293 1.175l4.535 8.528a1.48 1.48 0 0 1-2.61 1.39l-5.01-9.425a2.5 2.5 0 0 0-4.415 0l-5.008 9.418a1.477 1.477 0 1 1-2.61-1.388l4.532-8.525A2.5 2.5 0 0 0 15 23.133v-5.96a2.5 2.5 0 0 0-1.563-2.318l-5.02-2.03a1.45 1.45 0 0 1-.8-1.902Z"
+                  />
+                </svg>
+              </div>
+              <p class="topic-icon__text">Accessibility</p>
+            </div>
+          </button>
+        </div>
+        <!-- Quiz menu end -->
+      </section>
+
+      <section class="test hidden">
+        <div class="test__question-wrapper">
+          <div class="test__question">
+            <!-- Quiz question start -->
+            <p class="test__question-page">
+              Question <span id="test__question-index">6</span> of 10
+            </p>
+            <p id="test__question-text" class="test__question-text">
+              Loading...
+            </p>
+          </div>
+
+          <div class="test__progress-bar-wrapper">
+            <div id="test__progress-bar" class="test__progress-bar"></div>
+          </div>
+        </div>
+
+        <form id="test__form" class="test__form">
+          <label class="test__option" for="test__radio--a">
+            <input
+              id="test__radio--a"
+              class="test__radio"
+              type="radio"
+              name="test__option"
+            />
+
+            <div class="test_option-text-wrapper">
+              <p class="test__option-letter">A</p>
+              <p class="test__option-text">Example</p>
+            </div>
+
+            <img
+              class="correct | hidden"
+              src="./assets/images/icon-correct.svg"
+              alt=""
+            />
+            <img
+              class="incorrect | hidden"
+              src="./assets/images/icon-incorrect.svg"
+              alt=""
+            />
+          </label>
+
+          <label class="test__option" for="test__radio--b">
+            <input
+              id="test__radio--b"
+              class="test__radio"
+              type="radio"
+              name="test__option"
+            />
+            <div class="test_option-text-wrapper">
+              <p class="test__option-letter">B</p>
+              <p class="test__option-text">Example</p>
+            </div>
+
+            <img
+              class="correct | hidden"
+              src="./assets/images/icon-correct.svg"
+              alt=""
+            />
+            <img
+              class="incorrect | hidden"
+              src="./assets/images/icon-incorrect.svg"
+              alt=""
+            />
+          </label>
+
+          <label class="test__option" for="test__radio--c">
+            <input
+              id="test__radio--c"
+              class="test__radio"
+              type="radio"
+              name="test__option"
+            />
+            <div class="test_option-text-wrapper">
+              <p class="test__option-letter">C</p>
+              <p class="test__option-text">Example</p>
+            </div>
+
+            <img
+              class="correct | hidden"
+              src="./assets/images/icon-correct.svg"
+              alt=""
+            />
+            <img
+              class="incorrect | hidden"
+              src="./assets/images/icon-incorrect.svg"
+              alt=""
+            />
+          </label>
+
+          <label class="test__option" for="test__radio--d">
+            <input
+              id="test__radio--d"
+              class="test__radio"
+              type="radio"
+              name="test__option"
+            />
+
+            <div class="test_option-text-wrapper">
+              <p class="test__option-letter">D</p>
+              <p class="test__option-text">Example</p>
+            </div>
+
+            <img
+              class="correct | hidden"
+              src="./assets/images/icon-correct.svg"
+              alt=""
+            />
+            <img
+              class="incorrect | hidden"
+              src="./assets/images/icon-incorrect.svg"
+              alt=""
+            />
+          </label>
+
+          <div>
+            <button id="test__submit-button" class="button" type="submit">
+              Submit Answer
+            </button>
+            <div id="test__error-label" class="test__error-label | hidden">
+              <img src="./assets/images/icon-error.svg" alt="" />
+              Please Select an answer
+            </div>
+          </div>
+        </form>
+
+        <!-- Quiz question end -->
+      </section>
+
+      <!-- Quiz completed start -->
+      <section class="score hidden">
+        <h2 class="score__heading">
+          Quiz completed
+          <span class="section__heading-span">You scored...</span>
+        </h2>
+
+        <div class="score__col--right">
+          <div class="score__card">
+            <div id="score__topic" class="topic">
+              <div class="topic-icon__wrapper">
+                <img src="" alt="" />
+              </div>
+              <p class="topic-icon__text">Accessibility</p>
+            </div>
+
+            <p class="score__stats">
+              <span id="score__stats-num" class="score__stats-num">8</span> out
+              of 10
+            </p>
+          </div>
+
+          <button id="score__play-again-button" class="button">
+            Play Again
+          </button>
+        </div>
+        <!-- Quiz completed end -->
+      </section>
+    </main>
+  </body>
+</html>
