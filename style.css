@@ -4,32 +4,32 @@
 /* ========== VARIABLES ========== */
 /* =============================== */
 :root {
+  --hue: 105; /* Started at 105: Green */
   /* Colors */
-  --clr-green-900: hsl(140, 28%, 15%);
-  --clr-green-800: hsl(140, 28%, 20%);
-  --clr-green-600: hsl(132, 29%, 31%);
-  --clr-green-400: #6a994e; /* Lighter accent for hovers */
+  --clr-red-500: #f64a4a;
+  --clr-white: #ffffff;
 
-  --clr-green-200: hsl(120, 30%, 86%);
-  --clr-green-150: hsl(120, 30%, 91%);
-  --clr-green-100: hsl(120, 30%, 96%);
+  --clr-primary-dd: hsl(var(--hue), 45%, 2%);
+  --clr-primary-bd: hsl(var(--hue), 45%, 7%);
+  --clr-primary-ld: hsl(var(--hue), 45%, 12%);
+  --clr-primary-tm: hsl(var(--hue), 45%, 15%);
+  --clr-primary-base: hsl(var(--hue), 45%, 36%); /* Base */
+  --clr-primary-dl: hsl(var(--hue), 45%, 88%);
+  --clr-primary-bl: hsl(var(--hue), 45%, 93%);
+  --clr-primary-ll: hsl(var(--hue), 45%, 98%);
 
-  --clr-bg-dark: var(--clr-green-200);
-  --clr-bg: var(--clr-green-150);
-  --clr-bg-light: var(--clr-green-100);
+  --clr-bg-dark: var(--clr-primary-dl);
+  --clr-bg: var(--clr-primary-bl);
+  --clr-bg-light: var(--clr-primary-ll);
 
-  --clr-primary-900: var(--clr-green-900); /* Near black green for text */
-  --clr-primary-600: var(--clr-green-600); /* Your main brand color */
-  --clr-primary-400: var(--clr-green-400);
-
-  --clr-text: var(--clr-green-900);
-  --clr-text-muted: var(--clr-green-800);
-  --clr-links: var(--clr-primary-900);
+  --clr-text: var(--clr-primary-bd);
+  --clr-text-muted: var(--clr-primary-tm);
 
   /* Conversions Pixel to Rem */
   --ptr-6: 0.375rem;
   --ptr-8: 0.5rem;
   --ptr-12: 0.75rem;
+  --ptr-14: 0.875rem;
   --ptr-16: 1rem;
   --ptr-18: 1.125rem;
   --ptr-20: 1.25rem;
@@ -39,16 +39,19 @@
 
   /* Conversions Pixel to Em */
   --pte-8: 0.5em;
+  --pte-16: 1em;
   --pte-24: 1.5em;
 
   /* Font Family */
   --ff-primary: "Inter", sans-serif;
 
   /* Font Weight */
+  --fw-medium: 600;
   --fw-bold: 700;
 
   /* Padding */
   --padding-300: var(--pte-8);
+  --padding-400: var(--pte-16);
   --padding-500: var(--pte-24);
 
   /* Radius */
@@ -67,8 +70,8 @@
   --spacing-600: var(--ptr-32);
 
   /* Typography */
-  --font-preset-1: var(--ptr-16)/1.5 var(--ff-primary);
-  --font-preset-2: var(--ptr-)/1 var(--ff-primary);
+  --font-preset-1: var(--ptr-14)/1.5 var(--ff-primary);
+  --font-preset-2: var(--ptr-24)/1 var(--ff-primary);
 
   --font-heading-1: var(--fw-bold) var(--ptr-32)/1 var(--ff-primary);
   --font-heading-2: var(--fw-bold) var(--ptr-24)/1 var(--ff-primary);
@@ -81,6 +84,7 @@
 /* =============================== */
 a {
   text-decoration: none;
+  text-align: center;
 }
 
 body {
@@ -91,8 +95,30 @@ body {
   color: var(--clr-text-muted);
 }
 
-footer {
-  text-align: center;
+body.dark-mode {
+  --clr-bg-dark: var(--clr-primary-dd);
+  --clr-bg: var(--clr-primary-bd);
+  --clr-bg-light: var(--clr-primary-ld);
+
+  --clr-text: var(--clr-white);
+  --clr-text-muted: var(--clr-white);
+}
+
+code {
+  /* Use a modern mono font that pairs well with Inter */
+  font-family: "Fira Code", "Roboto Mono", monospace;
+
+  /* Give it your "Nature" look */
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-muted);
+
+  /* Subtle padding so it doesn't look cramped */
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+
+  /* Professional touch: a light border */
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 section {
@@ -115,6 +141,23 @@ section {
 /* =============================== */
 /* ========== COMPONENTS ========= */
 /* =============================== */
+.button {
+  font-weight: var(--fw-medium);
+  text-decoration: none;
+  width: 100%;
+  padding: var(--padding-300);
+  background-color: var(--clr-bg-light);
+  color: var(--clr-links);
+  border: none;
+  border-radius: var(--br-275);
+}
+
+.button--ghost {
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-primary-base);
+  border: 2px solid var(--clr-primary-base);
+}
+
 .heading {
   color: var(--clr-text);
 }
@@ -132,6 +175,13 @@ section {
   max-width: 65ch;
 }
 
+.main__footer {
+  text-align: center;
+  padding-block: var(--padding-400);
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text);
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -143,7 +193,7 @@ section {
   font-size: 18px;
   font-weight: var(--fw-bold);
   text-decoration: none;
-  color: var(--clr-primary);
+  color: var(--clr-text);
 }
 
 .main-header__nav-list {
@@ -160,6 +210,10 @@ section {
   aspect-ratio: 1;
 }
 
+.main-header__theme-icon path {
+  fill: var(--clr-text);
+}
+
 .main-header__theme-switch {
   display: flex;
   align-items: center;
@@ -173,7 +227,7 @@ section {
   position: relative;
   height: var(--height);
   width: var(---width);
-  background-color: var(--clr-primary-600);
+  background-color: var(--clr-primary-base);
   border-radius: var(--br-350);
 }
 
@@ -190,13 +244,73 @@ section {
   transition: transform 0.2s;
 }
 
+.readme-modal {
+  max-height: 90vh;
+  margin: auto;
+  padding: 0;
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-text);
+  border: none;
+  border-radius: var(--br-350);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.readme-modal::backdrop {
+  background-color: hsla(132, 29%, 31%, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.readme-modal__close {
+  font-size: 24px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: var(--clr-red-500);
+}
+
+.readme-modal__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  height: 100%;
+  max-height: 90vh;
+  max-width: 65ch;
+  padding: var(--padding-400);
+}
+
+.readme-modal__content {
+  overflow-y: auto;
+}
+
+.readme-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-400);
+  background-color: var(--clr-bg);
+  border-bottom: 2px solid var(--clr-primary-base);
+  border-top-left-radius: var(--br-275);
+  border-top-right-radius: var(--br-275);
+}
+
 .solutions__card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 32px;
   padding: var(--padding-500);
   background-color: var(--clr-bg);
   border-radius: var(--br-350);
   box-shadow: var(--shadow);
+}
+
+.solutions__card-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-300);
 }
 
 .solutions__card-heading {
@@ -208,17 +322,28 @@ section {
   gap: var(--spacing-400);
 }
 
+.solutions__cards-wrapper {
+  display: grid;
+  gap: var(--spacing-600);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.readme-modal__footer {
+  text-align: center;
+  padding-block: var(--padding-300);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+}
+
 .solutions__heading {
   font: var(--font-heading-2);
   margin-bottom: var(--spacing-500);
 }
 
-.solutions__link {
-  text-decoration: none;
-  padding: var(--padding-300);
-  background-color: var(--clr-bg-light);
-  color: var(--clr-links);
-  border-radius: var(--br-275);
+.solutions__links {
+  display: flex;
+  gap: var(--spacing-300);
+  width: 100%;
 }
 
 @media (max-width: 48em) {
@@ -241,5 +366,11 @@ section {
 
   .main-header__theme-switch {
     grid-area: theme;
+  }
+}
+
+@media (min-width) {
+  :root {
+    --font-preset-1: var(--ptr-16)/1.5 var(--ff-primary);
   }
 }

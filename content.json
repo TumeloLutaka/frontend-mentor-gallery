@@ -10,9 +10,26 @@
             "JavaScript",
             "JSON"
         ],
-        "difficulty": "Advanced",
-        "live_url": "./frontend-quiz-app/",
-        "repo_url": "https://github.com/yourusername/fm-gallery/tree/main/frontend-quiz-app",
+        "difficulty": "Intermediate",
+        "live_url": "./solutions/frontend-quiz-app/",
+        "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/frontend-quiz-app",
+        "readme_url": "./solutions/frontend-quiz-app/README.md",
+        "status": "Completed"
+    },
+    {
+        "id": 2,
+        "title": "Password Generator App",
+        "description": "A functional password generator applications that allows the user generate a password based on selected options, copy to clipboard and see strength rating.",
+        "thumbnail": "./assets/images/thumbnails/password-generator-app.jpg",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "difficulty": "Intermediate",
+        "live_url": "./solutions/password-generator-app/",
+        "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/password-generator-app",
+        "readme_url": "./solutions/password-generator-app/README.md",
         "status": "Completed"
     }
 ]
