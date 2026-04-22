@@ -1,35 +1,50 @@
 [
-    {
-        "id": 1,
-        "title": "Frontend Quiz App",
-        "description": "A functional multi-choice quiz application featuring category selection, progress tracking, and score calculation.",
-        "thumbnail": "./assets/images/thumbnails/quiz-app.jpg",
-        "technologies": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "JSON"
-        ],
-        "difficulty": "Intermediate",
-        "live_url": "./solutions/frontend-quiz-app/",
-        "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/frontend-quiz-app",
-        "readme_url": "./solutions/frontend-quiz-app/README.md",
-        "status": "Completed"
-    },
-    {
-        "id": 2,
-        "title": "Password Generator App",
-        "description": "A functional password generator applications that allows the user generate a password based on selected options, copy to clipboard and see strength rating.",
-        "thumbnail": "./assets/images/thumbnails/password-generator-app.jpg",
-        "technologies": [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "difficulty": "Intermediate",
-        "live_url": "./solutions/password-generator-app/",
-        "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/password-generator-app",
-        "readme_url": "./solutions/password-generator-app/README.md",
-        "status": "Completed"
-    }
+  {
+    "id": 15,
+    "title": "Interactive Rating Component",
+    "description": "A clean, accessible rating component that captures user feedback. Features a custom radio-button scale, state-swapping with JavaScript, and a 95% accessibility score via Lighthouse.",
+    "thumbnail": "./assets/images/thumbnails/interactive-rating-component.png",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "difficulty": "Newbie",
+    "live_url": "./solutions/interactive-rating-component/",
+    "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/interactive-rating-component",
+    "readme_url": "./solutions/interactive-rating-component/README.md",
+    "status": "Completed"
+  },
+  {
+    "id": 14,
+    "title": "Frontend Quiz App",
+    "description": "A functional multi-choice quiz application featuring category selection, progress tracking, and score calculation.",
+    "thumbnail": "./assets/images/thumbnails/frontend-quiz-app.png",
+    "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
+    "difficulty": "Intermediate",
+    "live_url": "./solutions/frontend-quiz-app/",
+    "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/frontend-quiz-app",
+    "readme_url": "./solutions/frontend-quiz-app/README.md",
+    "status": "Completed"
+  },
+  {
+    "id": 13,
+    "title": "Password Generator App",
+    "description": "A functional password generator applications that allows the user generate a password based on selected options, copy to clipboard and see strength rating.",
+    "thumbnail": "./assets/images/thumbnails/password-generator-app.png",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "difficulty": "Intermediate",
+    "live_url": "./solutions/password-generator-app/",
+    "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/password-generator-app",
+    "readme_url": "./solutions/password-generator-app/README.md",
+    "status": "Completed"
+  },
+  {
+    "id": 1,
+    "title": "QR Code Component",
+    "description": "A fundamental layout challenge focused on CSS positioning, border-radius, and responsive typography. Utilizes semantic HTML structure with figure and figcaption for optimal SEO and accessibility.",
+    "thumbnail": "./assets/images/thumbnails/qr-code-component.png",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "live_url": "./solutions/qr-code-component/",
+    "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/qr-code-component",
+    "readme_url": "./solutions/qr-code-component/README.md",
+    "status": "Completed"
+  }
 ]

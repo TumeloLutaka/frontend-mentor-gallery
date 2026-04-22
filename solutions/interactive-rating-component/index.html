@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="./index.js"></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="rating | container">
+        <form id="rating__form" class="rating__form | max-width">
+          <div class="rating__img-wrapper">
+            <img class="rating__img" src="./images/icon-star.svg" alt="" />
+          </div>
+
+          <div class="rating__form-content">
+            <h1 class="heading">How did we do?</h1>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+
+            <fieldset>
+              <legend class="sr-only">Select a rating from 1 to 5</legend>
+              <div class="rating__inputs">
+                <label class="rating__label" for="rating__input--1">
+                  <input
+                    id="rating__input--1"
+                    class="rating__input | sr-only"
+                    type="radio"
+                    name="rating"
+                    value="1"
+                    aria-label="Rating 1 out of 5"
+                    required
+                  />
+                  1
+                </label>
+
+                <label class="rating__label" for="rating__input--2">
+                  <input
+                    id="rating__input--2"
+                    class="rating__input | sr-only"
+                    type="radio"
+                    name="rating"
+                    value="2"
+                    aria-label="Rating 2 out of 5"
+                  />
+                  2
+                </label>
+
+                <label class="rating__label" for="rating__input--3">
+                  <input
+                    id="rating__input--3"
+                    class="rating__input | sr-only"
+                    type="radio"
+                    name="rating"
+                    value="3"
+                    aria-label="Rating 3 out of 5"
+                  />
+                  3
+                </label>
+
+                <label class="rating__label" for="rating__input--4">
+                  <input
+                    id="rating__input--4"
+                    class="rating__input | sr-only"
+                    type="radio"
+                    name="rating"
+                    value="4"
+                    aria-label="Rating 4 out of 5"
+                  />
+                  4
+                </label>
+
+                <label class="rating__label" for="rating__input--5">
+                  <input
+                    id="rating__input--5"
+                    class="rating__input | sr-only"
+                    type="radio"
+                    name="rating"
+                    value="5"
+                    aria-label="Rating 5 out of 5"
+                  />
+                  5
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <button class="rating__submit-button" type="submit">SUBMIT</button>
+        </form>
+
+        <section id="thanks" class="thanks | max-width hidden">
+          <img
+            class="thanks__img"
+            src="./images/illustration-thank-you.svg"
+            alt=""
+          />
+
+          <div class="thanks__final-rating">
+            <p aria-live="polite">
+              You selected <span id="thanks_rating-num">4</span> out of 5
+            </p>
+          </div>
+
+          <div class="thanks__text-content">
+            <h2 id="thanks__heading" class="heading" tabindex="-1">
+              Thank you!
+            </h2>
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <footer class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/learning-paths/introduction-to-web-accessibility-mXu-9PHVsd/challenge/6647781a20fb35b1b61abb51/start"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/TumeloLutaka"
+          >Tumelo Lutaka</a
+        >.
+      </footer>
+    </main>
+  </body>
+</html>

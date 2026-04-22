@@ -1,0 +1,65 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* Colors */
+  --col-white: hsl(0, 0%, 100%);
+
+  --col-slate-300: hsl(212, 45%, 89%);
+  --col-slate-500: hsl(216, 15%, 48%);
+  --col-slate-900: hsl(218, 44%, 22%);
+
+  /* Spacing */
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+
+  height: 100vh;
+  background-color: var(--col-slate-300);
+}
+
+.card {
+  max-width: 320px;
+  padding: var(--spacing-16);
+  padding-bottom: var(--spacing-40);
+  background-color: white;
+  border-radius: 20px;
+}
+
+.card__img {
+  border-radius: 10px;
+  margin-bottom: var(--spacing-24);
+}
+
+.card__figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+  padding-inline: var(--spacing-16);
+}
+
+.card__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  color: var(--col-slate-900);
+}
+
+.card__desc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: var(--col-slate-500);
+}

@@ -50,8 +50,9 @@
         <label for="main-header__theme-checkbox">
           <input
             id="main-header__theme-checkbox"
-            class="main-header__theme-checkbox hidden"
-            type="checkbox" />
+            class="main-header__theme-checkbox | sr-only"
+            type="checkbox"
+            aria-label="Theme toggle" />
           <div class="main-header__theme-toggle"></div
         ></label>
         <svg
@@ -85,12 +86,19 @@
 
         <div id="solutions__cards-wrapper" class="solutions__cards-wrapper">
           <article class="solutions__card">
-            <div class="solutions__card-text-wrapper">
-              <h3 class="solutions__card-heading heading">Frontend Quiz App</h3>
-              <p class="solutions__card-desc">
-                A quiz application that test you on four web development
-                subjects. HTML, CSS, JavaScript, and Accessibility
-              </p>
+            <div class="solutions__card-header">
+              <img
+                class="solutions__card-img"
+                src="./assets/images/thumbnails/frontend-mentor-gallery.png"
+                alt=""
+              />
+
+              <div class="solutions__card-text-wrapper">
+                <h3 class="solutions__card-heading heading">Project Name</h3>
+                <p class="solutions__card-desc">
+                  Brief description of the project
+                </p>
+              </div>
             </div>
 
             <div class="solutions__card-actions">
@@ -102,7 +110,9 @@
                   >View Code</a
                 >
               </div>
-              <button class="solutions_open-modal button">Project Info</button>
+              <button class="solutions_open-modal button button--ghost">
+                Project Info
+              </button>
             </div>
           </article>
         </div>

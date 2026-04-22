@@ -65,9 +65,17 @@ async function loadCards() {
       solutionsCard = document.createElement("article");
       solutionsCard.classList.add("solutions__card");
       solutionsCard.innerHTML = `
-        <div class="solutions__card-text-wrapper">
-            <h3 class="solutions__card-heading heading">${sol.title}</h3>
-            <p class="solutions__card-desc">${sol.description}</p>
+        <div class="solutions__card-header">  
+          <img
+            class="solutions__card-img"
+            src="${sol.thumbnail}"
+            alt=""
+          />
+
+          <div class="solutions__card-text-wrapper">
+              <h3 class="solutions__card-heading heading">${sol.title}</h3>
+              <p class="solutions__card-desc">${sol.description}</p>
+          </div>
         </div>
 
         <div class="solutions__card-actions">
