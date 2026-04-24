@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf")
+    format("truetype-variations");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  src: url("./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf")
+    format("truetype-variations");
+}
+
+/* =============================== */
+/* ========== VARIABLES ========== */
+/* =============================== */
+:root {
+  /* Colors */
+  --clr-purple-100: #f8eeff;
+  --clr-purple-600: #8b6990;
+  --clr-purple-950: #301534;
+  --clr-violet-600: #ad28eb;
+  --clr-white: #ffffff;
+
+  /* Conversions Pixel to Rem */
+  --ptr-8: 0.5rem;
+  --ptr-14: 0.875rem;
+  --ptr-16: 1rem;
+  --ptr-18: 1.125rem;
+  --ptr-24: 1.5rem;
+  --ptr-32: 2rem;
+  --ptr-56: 3.5rem;
+
+  /* Conversions Pixel to Em */
+  --pte-24: 1.5em;
+  --pte-40: 2.5rem;
+
+  /* Font Family */
+  --ff-primary: "Work Sans", sans-serif;
+
+  /* Font Weight */
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  /* Padding */
+  --padding-500: var(--pte-24);
+  --padding-700: var(--pte-40);
+
+  /* Radius */
+  --br-300: var(--ptr-8);
+  --br-400: var(--ptr-16);
+
+  /* Shadow */
+  --shadow: 0 32px 56px 0 rgba(81, 0, 118, 0.1);
+
+  /* Spacing */
+  --spacing-500: var(--ptr-24);
+  --spacing-600: var(--ptr-32);
+
+  /* Typography */
+  --font-preset-1: var(--fw-bold) var(--ptr-32)/1.178 var(--ff-primary);
+  --font-preset-2: var(--fw-semi-bold) var(--ptr-16)/1.16 var(--ff-primary);
+  --font-preset-3: var(--ptr-14)/1.5 var(--ff-primary);
+}
+
+/* =============================== */
+/* =========== GENERAL =========== */
+/* =============================== */
+body {
+  display: grid;
+  place-items: center;
+  font: var(--font-preset-3);
+  background-color: var(--clr-purple-100);
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: var(--clr-purple-600);
+}
+
+details {
+  --display-plus: block;
+  --display-minus: none;
+
+  display: grid;
+  padding-block: var(--padding-500);
+}
+
+details[open] {
+  --display-plus: none;
+  --display-minus: block;
+
+  gap: var(--spacing-500);
+}
+
+details:nth-child(1) {
+  padding-top: 0;
+}
+
+details:is(:last-child) {
+  padding-bottom: 0;
+}
+
+details:not(:last-child) {
+  border-bottom: 1px solid var(--clr-purple-100);
+}
+
+main {
+  position: relative;
+}
+
+/* =============================== */
+/* =========== UTILITY =========== */
+/* =============================== */
+.content-grid {
+  --padding-inline: var(--ptr-24);
+  --content-max-width: 70ch;
+  --breakout-max-width: 85ch;
+
+  --breakout-size: calc(
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
+  );
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding-inline), 1fr)
+    [breakout-start] 1fr
+    [content-start] min(
+      100% - (var(--padding-inline) * 2),
+      var(--content-max-width)
+    )
+    [content-end]
+    1fr [breakout-end]
+    minmax(var(--padding-inline), 1fr) [full-width-end];
+}
+
+.content-grid > :not(.breakout, .full-width),
+.full-width > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+
+.content-grid > .breakout {
+  grid-column: breakout;
+}
+
+.content-grid > .full-width {
+  grid-column: full-width;
+
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+/* =============================== */
+/* ========== COMPONENTS ========= */
+/* =============================== */
+.attribution {
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+}
+
+.bg-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* height: 232px; */
+}
+
+.bg-body__img {
+  width: 100%;
+  height: 100%;
+}
+
+.faq {
+  display: grid;
+  gap: var(--spacing-500);
+  max-width: 600px;
+  padding: var(--padding-500);
+  background-color: var(--clr-white);
+  border-radius: var(--br-300);
+  box-shadow: var(--shadow);
+}
+
+.faq__header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-500);
+}
+.faq__heading {
+  font: var(--font-preset-1);
+  color: var(--clr-purple-950);
+}
+
+.faq__heading-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.faq__minus,
+.faq__plus {
+  height: var(--spacing-500);
+  aspect-ratio: 1;
+}
+
+.faq__minus {
+  display: var(--display-minus);
+}
+
+.faq__plus {
+  display: var(--display-plus);
+}
+
+.faq__summary {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-500);
+  align-items: center;
+  list-style: none;
+  font: var(--font-preset-2);
+  color: var(--clr-purple-950);
+}
+
+.faq__summary:hover,
+.faq__summary:focus-visible {
+  color: var(--clr-violet-600);
+  cursor: pointer;
+}
+
+.faq__summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  :root {
+    /* Typography */
+    --font-preset-1: var(--fw-bold) var(--ptr-56)/1.178 var(--ff-primary);
+    --font-preset-2: var(--fw-semi-bold) var(--ptr-18)/1.16 var(--ff-primary);
+    --font-preset-3: var(--ptr-16)/1.5 var(--ff-primary);
+  }
+
+  body {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+
+  .faq {
+    gap: var(--spacing-600);
+    max-width: 600px;
+    padding: var(--padding-700);
+    border-radius: var(--br-400);
+  }
+
+  .faq__heading-icon {
+    height: 34px;
+    width: 34px;
+  }
+}

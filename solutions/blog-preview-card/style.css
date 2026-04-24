@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Colors */
+
+  --col-primary: #f4d04e;
+  --col-grey-500: hsl(0, 0%, 42%);
+  --col-grey-950: hsl(0, 0%, 7%);
+  --col-white: #fff;
+
+  /* Spacing */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-24: 24px;
+
+  /* Font-Size */
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.5rem;
+
+  /* Font Weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-xbold: 800;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--col-primary);
+}
+
+.card {
+  max-width: 384px;
+  padding: var(--spacing-24);
+  background-color: var(--col-white);
+
+  border: 1px solid var(--col-grey-950);
+  border-radius: 20px;
+
+  box-shadow: 8px 8px 0px rgba(0, 0, 0);
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+}
+
+.card__author-name {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-xbold);
+  line-height: 1.5;
+  letter-spacing: 0px;
+
+  color: var(--col-grey-950);
+}
+
+.card__author-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.card__content {
+  margin-bottom: var(--spacing-24);
+}
+
+.card__description {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  line-height: 1.5;
+  letter-spacing: 0px;
+
+  color: var(--col-grey-500);
+}
+
+.card__img {
+  margin-bottom: var(--spacing-24);
+  border-radius: 10px;
+}
+
+.card__publish-date {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  line-height: 1.5;
+  letter-spacing: 0px;
+
+  margin-bottom: var(--spacing-12);
+}
+
+.card__tag {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-xbold);
+  line-height: 1.5;
+  letter-spacing: 0px;
+
+  width: fit-content;
+  margin-bottom: var(--spacing-12);
+  padding: var(--spacing-4) var(--spacing-12);
+  background-color: var(--col-primary);
+  border-radius: var(--spacing-4);
+}
+
+.card__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-xbold);
+  line-height: 1.5;
+  letter-spacing: 0px;
+
+  margin-bottom: var(--spacing-12);
+}
+
+.card__title:hover,
+.card__title:focus {
+  color: var(--col-primary);
+  cursor: pointer;
+}

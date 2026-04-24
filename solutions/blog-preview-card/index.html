@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        margin: 0 auto;
+
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(125, 69%, 17%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <img
+          class="card__img"
+          src="./assets/images/illustration-article.svg"
+          alt="Card Image: Vector Grpahic"
+        />
+
+        <div class="card__content">
+          <p class="card__tag">Learning</p>
+          <p class="card__publish-date">
+            Published <time datetime="2023-12-21">21 Dec 2023</time>
+          </p>
+
+          <h2 class="card__title">HTML & CSS foundations</h2>
+
+          <p class="card__description">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+
+        <div class="card__author">
+          <img
+            class="card__author-image"
+            src="./assets/images/image-avatar.webp"
+            alt="Author Image: Greg Hopper"
+          />
+          <p class="card__author-name">Greg Hooper</p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tumelo Lutaka</a>.
+    </footer>
+  </body>
+</html>

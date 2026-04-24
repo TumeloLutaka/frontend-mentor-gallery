@@ -48,6 +48,18 @@
     "status": "Completed"
   },
   {
+    "id": 2,
+    "title": "Blog Preview Card",
+    "description": "A responsive content card featuring a clean layout and hover states. Focuses on foundational CSS skills like box-shadow techniques, custom typography, and semantic HTML structure using the time element.",
+    "thumbnail": "./assets/images/thumbnails/blog-preview-card.png",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "live_url": "./solutions/blog-preview-card/",
+    "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/blog-preview-card",
+    "readme_url": "./solutions/blog-preview-card/README.md",
+    "status": "Completed"
+  },
+  {
     "id": 1,
     "title": "QR Code Component",
     "description": "A fundamental layout challenge focused on CSS positioning, border-radius, and responsive typography. Utilizes semantic HTML structure with figure and figcaption for optimal SEO and accessibility.",
