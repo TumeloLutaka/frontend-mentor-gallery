@@ -1,5 +1,17 @@
 [
   {
+    "id": 16,
+    "title": "FAQ Accordion",
+    "description": "A functional FAQ component built using semantic HTML5 details and summary elements. Focuses on accessible design, hover states for interactivity, and responsive layouts using CSS Grid.",
+    "thumbnail": "./assets/images/thumbnails/faq-accordion.png",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "live_url": "./solutions/faq-accordion/",
+    "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/faq-accordion",
+    "readme_url": "./solutions/faq-accordion/README.md",
+    "status": "Completed"
+  },
+  {
     "id": 15,
     "title": "Interactive Rating Component",
     "description": "A clean, accessible rating component that captures user feedback. Features a custom radio-button scale, state-swapping with JavaScript, and a 95% accessibility score via Lighthouse.",
