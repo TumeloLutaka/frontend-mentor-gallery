@@ -66,8 +66,8 @@
     "thumbnail": "./assets/images/thumbnails/social-links-profiles.png",
     "technologies": ["HTML", "CSS"],
     "difficulty": "Newbie",
-    "live_url": "./solutions/social-links-profile/",
-    "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/social-links-profile",
+    "live_url": "./solutions/social-links-profiles/",
+    "repo_url": "https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/social-links-profiles",
     "readme_url": "./solutions/social-links-profile/README.md",
     "status": "Completed"
   },
