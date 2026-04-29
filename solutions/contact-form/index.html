@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script defer src="main.js"></script>
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="contact-form__wrapper">
+        <h1 class="contact-form__heading">Contact Us</h1>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-form__input--fname">First Name</label>
+            <input
+              id="contact-form__input--fname"
+              type="text"
+              name="first_name"
+              required
+            />
+            <span class="form-group__error-label" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-form__input--lname">Last Name</label>
+            <input
+              id="contact-form__input--lname"
+              type="text"
+              name="last_name"
+              required
+            />
+            <span class="form-group__error-label" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group | span-all">
+            <label for="contact-form__input--email">Email Address</label>
+            <input
+              id="contact-form__input--email"
+              type="email"
+              name="email"
+              required
+              data-error="Please eneter a valid email address"
+            />
+            <span class="form-group__error-label" aria-live="polite"></span>
+          </div>
+
+          <!-- RADIO BUTTONS -->
+          <fieldset class="contact-form__fieldset | error-holder span-all">
+            <legend>Query Type</legend>
+
+            <div class="form-group">
+              <input
+                id="contact-form_radio--general"
+                type="radio"
+                name="query-type"
+                required
+                data-error="Please select a query type"
+              />
+              <label for="contact-form_radio--general">General Enquiry</label>
+            </div>
+
+            <div class="form-group">
+              <input
+                id="contact-form_radio--support"
+                type="radio"
+                name="query-type"
+                data-error="Please select a query type"
+              />
+              <label for="contact-form_radio--support">Support Request</label>
+            </div>
+            <span class="form-group__error-label" aria-live="polite"></span>
+          </fieldset>
+          <!-- END OF RADIO BUTTONS -->
+
+          <div class="form-group | span-all">
+            <label for="contact-form__input--message">Message</label>
+            <textarea
+              id="contact-form__input--message"
+              name="message"
+              required
+            ></textarea>
+            <span class="form-group__error-label" aria-live="polite"></span>
+          </div>
+
+          <div class="contact-form__consent | error-holder span-all">
+            <div class="form-group">
+              <input
+                id="contact-form__input--consent"
+                class="contact-form__checkbox"
+                type="checkbox"
+                name="consent"
+                required
+                data-error="To submit this form, please consent to being contacted"
+              />
+              <label
+                class="contact-form__fine-print"
+                for="contact-form__input--consent"
+                >I consent to being contacted by the team</label
+              >
+            </div>
+            <span class="form-group__error-label" aria-live="polite"> </span>
+          </div>
+
+          <button class="contact-form__submit | span-all" type="submit">
+            Submit
+          </button>
+        </form>
+
+        <div
+          id="contact-form__success-wrapper"
+          class="contact-form__success-wrapper"
+        >
+          <div class="contact-form__success-toast">
+            <div class="contact-form__sucess-heading">
+              <img src="./assets/images/icon-success-check.svg" alt="" />
+              <h2>Message Sent!</h2>
+            </div>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+          </div>
+        </div>
+      </article>
+
+      <footer class="attribution _personal-footer">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="https://github.com/TumeloLutaka">Tumelo Lutaka</a>.
+      </footer>
+    </main>
+  </body>
+</html>

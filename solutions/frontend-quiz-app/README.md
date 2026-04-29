@@ -36,6 +36,11 @@ Users should be able to:
 ![Desktop View Light Mode](/solutions/frontend-quiz-app/assets/images/screenshots/desktop-view-light.png)
 ![Desktop View Dark Mode](/solutions/frontend-quiz-app/assets/images/screenshots/desktop-view-dark.png)
 
+### Links
+
+- Solution URL: https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/frontend-quiz-app
+- Live Site URL: https://tumelolutaka.github.io/frontend-mentor-gallery/solutions/frontend-quiz-app/
+
 ### Built with
 
 - CSS custom properties

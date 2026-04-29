@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colors */
+  --col-green: hsl(75, 94%, 57%);
+  --col-white: hsl(0, 0%, 100%);
+  --col-grey-700: hsl(0, 0%, 20%);
+  --col-grey-800: hsl(0, 0%, 12%);
+  --col-grey-900: hsl(0, 0%, 8%);
+
+  /* Font Size */
+  --fs-base: 0.875rem;
+  --fs-lg: 1.5rem;
+
+  /* Font Weight */
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fw-xbold: 700;
+
+  /* Spacing */
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-12: 0.75rem;
+  --spacing-24: 1.5rem;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--col-grey-900);
+  font-family: "Inter", sans-serif;
+  font-size: var(--fs-base);
+  color: var(--col-white);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.profile-card {
+  text-align: center;
+
+  width: 100%;
+  max-width: 340px;
+  padding: var(--spacing-24);
+
+  background-color: var(--col-grey-800);
+  border-radius: 0.5rem;
+}
+
+.profile-card__bio {
+  font-weight: var(--fw-regular);
+  line-height: 1.4;
+  margin-bottom: var(--spacing-24);
+}
+
+.profile-card__img {
+  width: 4rem;
+  aspect-ratio: 1 / 1;
+
+  border-radius: 50%;
+  margin-bottom: var(--spacing-24);
+}
+
+.profile-card__location {
+  font-weight: var(--fw-bold);
+  line-height: 1.4;
+  margin-bottom: var(--spacing-24);
+  color: var(--col-green);
+}
+
+.profile-card__name {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-8);
+}
+
+.profile-card__nav-item {
+  font-weight: var(--fw-xbold);
+  line-height: 1.4;
+  padding-block: 0.75rem;
+  background-color: var(--col-grey-700);
+  border-radius: 0.25rem;
+}
+
+.profile-card__nav-item:hover {
+  background-color: var(--col-green);
+  color: var(--col-grey-700);
+  cursor: pointer;
+}
+
+.profile-card__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+}

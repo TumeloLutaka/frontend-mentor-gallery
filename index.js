@@ -1,12 +1,6 @@
 /* =============================== */
 /* ========= DOM REFERENCE ======= */
 /* =============================== */
-// BUTTONS
-const readmeModalClose = document.getElementById("readme-modal__close");
-
-// DIALOGUE
-const readmeModal = document.getElementById("readme-modal");
-
 // DIVS
 const solutionsCardWrapper = document.getElementById(
   "solutions__cards-wrapper",
@@ -83,7 +77,6 @@ async function loadCards() {
             <a class="solutions__link button" href="${sol.live_url}">Live Site</a>
             <a class="solutions__link button" href="${sol.repo_url}">View Code</a>
             </div>
-          <button class="solutions_open-modal button button--ghost" onclick="openReadme('${sol.title}', '${sol.readme_url}')">Project Info</button>
         </div>
         `;
 
@@ -91,29 +84,5 @@ async function loadCards() {
     });
   } catch (error) {
     console.log(error);
-  }
-}
-
-async function openReadme(title, readmePath) {
-  readmeModal.showModal();
-  console.log(readmeModal);
-  const contentArea = readmeModal.querySelector("#readme-modal__content");
-
-  try {
-    // Fetch raw text from the project' README
-    const response = await fetch(readmePath);
-    const markdownText = await response.text();
-
-    // Change header title
-    readmeModalProjectTitle = document.getElementById(
-      "readme-modal__project-title",
-    );
-    readmeModalProjectTitle.textContent = title;
-
-    // Convert Markdown to HTML using the liabrary
-    contentArea.innerHTML = marked.parse(markdownText);
-    readmeModal.showModal();
-  } catch (error) {
-    contentArea.innerHTML = "<p>Doumentation could not be loaded.</p>";
   }
 }

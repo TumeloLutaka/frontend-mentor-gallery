@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/TumeloLutaka/blog-preview-card
-- Live Site URL: https://tumelolutaka.github.io/blog-preview-card/
+- Solution URL: https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/blog-preview-card
+- Live Site URL: https://tumelolutaka.github.io/frontend-mentor-gallery/solutions/blog-preview-card/
 
 ## My process
 

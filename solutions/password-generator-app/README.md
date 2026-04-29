@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/TumeloLutaka/password-generator-app
-- Live Site URL: https://tumelolutaka.github.io/password-generator-app
+- Solution URL: https://github.com/TumeloLutaka/frontend-mentor-gallery/tree/main/solutions/password-generator-app
+- Live Site URL: https://tumelolutaka.github.io/frontend-mentor-gallery/solutions/password-generator-app/
 
 ## My process
 
