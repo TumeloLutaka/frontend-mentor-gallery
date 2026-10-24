@@ -74,8 +74,6 @@ frontend-mentor-gallery/
 │       └── styles/
 │           ├── reset.css               # Baseline modern CSS reset
 │           └── gallery.css             # Gallery design system (BEM, tokens, themes)
-├── scripts/                            # Automation utilities
-│   └── generate-thumbnails.ps1         # Screenshots challenges that have no thumbnail yet
 ├── index.html                          # Vite entry HTML for the React Gallery
 ├── netlify.toml                        # Netlify build settings (npm run build -> dist)
 ├── package.json
@@ -126,9 +124,8 @@ The live path (`/solutions/<slug>/`), thumbnail path (`/assets/images/thumbnails
 
 ### Thumbnails
 
-- File: `public/assets/images/thumbnails/<slug>.png`, same name as the slug.
-- Start `npm run dev`, then run `powershell -ExecutionPolicy Bypass -File scripts/generate-thumbnails.ps1`. It only creates missing thumbnails; add `-Force` to redo all, or `-Slug <slug> -Force` for a single one.
-- A hand-made screenshot dropped into the same path is also fine.
+- File: `public/assets/images/thumbnails/<slug>.png`, matching the challenge slug name.
+- Save a desktop or card preview screenshot directly into this folder.
 
 ### React challenge (future)
 
