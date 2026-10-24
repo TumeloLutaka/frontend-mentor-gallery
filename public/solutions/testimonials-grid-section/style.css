@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Colors */
+  --col-purple-50: hsl(260, 100%, 95%);
+  --col-purple-300: hsl(264, 82%, 80%);
+  --col-purple-500: hsl(263, 55%, 52%);
+
+  --col-background: hsl(300, 5%, 96%);
+  --col-white: hsl(0, 0%, 100%);
+  --col-grey-100: hsl(214, 17%, 92%);
+  --col-grey-200: hsl(0, 0%, 81%);
+  --col-grey-400: hsl(224, 10%, 45%);
+  --col-grey-500: hsl(217, 19%, 35%);
+  --col-dark-blue: hsl(219, 29%, 14%);
+  --col-black: hsl(0, 0%, 7%);
+
+  /* Font Size */
+  --fs-small: 0.6875rem;
+  --fs-base: 0.8125rem;
+  --fs-large: 1.25rem;
+
+  /* Font Weight */
+  --fw-medium: 500;
+  --fw-bold: 600;
+
+  /* Padding */
+  --padding-400: 2em;
+
+  /* Spacing */
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: var(--fs-base);
+  min-height: 100vh;
+  background-color: var(--col-background);
+}
+
+main {
+  display: grid;
+  gap: var(--spacing-400);
+  padding: var(--padding-400);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  padding: var(--padding-400);
+  background-color: var(--col-purple-500);
+  border-radius: var(--spacing-100);
+  color: var(--col-white);
+  box-shadow: 40px 60px 50px -47px rgb(72, 85, 106, 0.24);
+}
+
+.card__name {
+  font-weight: var(--fw-medium);
+  line-height: 1.1;
+}
+
+.card__header {
+  display: flex;
+  gap: var(--spacing-200);
+}
+
+.card__headline {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  z-index: 1;
+}
+
+.card__img {
+  height: 1.75rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.card__name-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-50);
+}
+
+.card__name-wrapper > p {
+  font-weight: var(--fw-medium);
+}
+
+.card__quotation-pattern {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 25%;
+  height: 6.375rem;
+  width: 6.5rem;
+}
+
+.card__quote {
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+}
+
+.card__verified {
+  font-size: var(--fs-small);
+  line-height: 1.1;
+}
+
+.card:nth-child(1) {
+  background-color: var(--col-purple-500);
+}
+.card:nth-child(1) .card__quote,
+.card:nth-child(1) .card__verified {
+  color: var(--col-purple-50);
+}
+
+.card:nth-child(1) .card__img {
+  border: 2px solid var(--col-purple-300);
+}
+.card:nth-child(2) {
+  background-color: var(--col-grey-500);
+}
+
+.card:nth-child(2) .card__verified,
+.card:nth-child(2) .card__quote {
+  color: var(--col-grey-100);
+}
+
+.card:nth-child(3) {
+  background-color: var(--col-white);
+  color: var(--col-grey-500);
+}
+.card:nth-child(3) .card__verified,
+.card:nth-child(3) .card__quote {
+  color: var(--col-grey-400);
+}
+
+.card:nth-child(4) {
+  background-color: var(--col-dark-blue);
+}
+.card:nth-child(4) .card__img {
+  border: 2px solid var(--col-purple-300);
+}
+.card:nth-child(4) .card__headline {
+  color: var(--col-grey-200);
+}
+.card:nth-child(4) .card__quote {
+  color: var(--col-grey-200);
+}
+
+.card:nth-child(5) {
+  background-color: var(--col-white);
+  color: var(--col-grey-500);
+}
+.card:nth-child(5) .card__verified,
+.card:nth-child(5) .card__quote {
+  color: var(--col-grey-400);
+}
+
+@media (min-width: 48em) {
+  main {
+    grid-template-areas:
+      "top top"
+      "sec_1 sec_2"
+      "sec_3 sec_3"
+      "bot bot";
+
+    padding: 2rem 4rem;
+  }
+
+  .card__quotation-pattern {
+    display: block;
+  }
+
+  .card:nth-child(1) {
+    grid-area: top;
+  }
+  .card:nth-child(2) {
+    grid-area: sec_1;
+  }
+  .card:nth-child(3) {
+    grid-area: sec_2;
+  }
+  .card:nth-child(4) {
+    grid-area: sec_3;
+  }
+  .card:nth-child(5) {
+    grid-area: bot;
+  }
+}
+
+@media (min-width: 62em) {
+  main {
+    grid-template-areas:
+      "top_1 top_1 top_2 top_3 "
+      "bot_1 bot_2 bot_2 top_3";
+    grid-template-columns: 15.9375rem 1fr 15.9375rem 15.9375rem;
+    grid-row-gap: var(--spacing-300);
+    max-width: 90%;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .card__quotation-pattern {
+    right: 3.75rem;
+  }
+
+  .card:nth-child(1) {
+    grid-area: top_1;
+  }
+  .card:nth-child(2) {
+    grid-area: top_2;
+  }
+  .card:nth-child(3) {
+    grid-area: bot_1;
+  }
+  .card:nth-child(4) {
+    grid-area: bot_2;
+  }
+  .card:nth-child(5) {
+    grid-area: top_3;
+  }
+}
+
+@media (min-width: 90em) {
+  main {
+    max-width: 69.625rem;
+  }
+
+  .card__quotation-pattern {
+    right: 4.25rem;
+  }
+}
+

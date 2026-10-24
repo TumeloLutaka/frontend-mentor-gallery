@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap");
+
+:root {
+  /* Colors */
+  --col-green-500: hsl(158, 36%, 37%);
+  --col-green-700: hsl(158, 42%, 18%);
+  --col-black: hsl(212, 21%, 14%);
+  --col-grey: hsl(228, 12%, 48%);
+  --col-cream: hsl(30, 38%, 92%);
+  --col-white: hsl(0, 0%, 100%);
+
+  /* Font */
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Fraunces", serif;
+
+  /* Font Size */
+  --fs-200: 0.75rem;
+  --fs-250: 0.8125rem;
+  --fs-300: 0.875rem;
+  --fs-700: 2rem;
+
+  /* Font Weight */
+  --fw-Medium: 500;
+  --fw-Bold: 700;
+
+  /* Padding */
+  --padding-400: 1em;
+  --padding-450: 1.125em;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.5rem;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  padding: 12px;
+  background-color: var(--col-cream);
+  color: var(--col-black);
+}
+
+.card {
+  display: grid;
+
+  background-color: var(--col-white);
+  max-width: 600px;
+  border-radius: var(--spacing-2);
+  overflow: hidden;
+}
+
+@media (min-width: 48em) {
+  footer {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-2);
+  height: auto;
+  width: 100%;
+  padding-block: var(--padding-450);
+  border-radius: var(--spacing-2);
+  background-color: var(--col-green-500);
+  color: var(--col-white);
+  cursor: pointer;
+}
+
+.card__btn:hover,
+.card__btn:focus {
+  background-color: var(--col-green-700);
+}
+
+.card__category {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-Medium);
+  line-height: 1.2;
+  letter-spacing: 0.3125em;
+  color: var(--col-grey);
+}
+
+.card__content {
+  padding: 2em;
+}
+
+.card__description {
+  font-weight: var(--fw-Medium);
+  line-height: 1.6;
+  color: var(--col-grey);
+}
+
+.card__header {
+  background-color: var(--col-green-500);
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  margin-bottom: var(--spacing-5);
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-5);
+}
+
+.card__price-current {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-Bold);
+  color: var(--col-green-500);
+}
+
+.card__price-original {
+  font-size: var(--fs-250);
+  font-weight: var(--fw-Medium);
+  line-height: 1.2;
+  text-decoration: line-through;
+  color: var(--col-grey);
+}
+
+.card__title {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-Bold);
+  color: var(--col-black);
+}

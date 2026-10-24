@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <header class="card__header">
+          <picture>
+            <source
+              srcset="./images/image-product-desktop.jpg"
+              media="(min-width:48em)"
+            />
+            <source srcset="./images/image-product-mobile.jpg" />
+            <img
+              class="card__img"
+              src="./images/image-product-mobile.jpg"
+              alt="Chanel Gabrielle perfume bottle"
+            />
+          </picture>
+        </header>
+
+        <section class="card__content">
+          <div class="card__info">
+            <h2 class="card__category">PERFUME</h2>
+            <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
+            <p class="card__description">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+
+          <div class="card__price">
+            <p class="card__price-current">$149.99</p>
+            <p class="card__price-original">$169.99</p>
+          </div>
+
+          <button class="card__btn">
+            <img src="./images/icon-cart.svg" alt="Cart icon" />
+            <p>Add to Cart</p>
+          </button>
+        </section>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/TumeloLutaka/">Tumelo Lutaka</a> | <a href="../../">Back to Gallery</a>.
+    </footer>
+  </body>
+</html>

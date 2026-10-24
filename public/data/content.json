@@ -1,0 +1,155 @@
+[
+  {
+    "id": 17,
+    "slug": "contact-form",
+    "title": "Contact Form",
+    "description": "A complex form challenge featuring custom validation logic, accessible error states, and responsive grid layouts. Focuses on interactive radio groups, checkboxes, and state management for success messages.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "difficulty": "Intermediate",
+    "status": "Completed"
+  },
+  {
+    "id": 16,
+    "slug": "faq-accordion",
+    "title": "FAQ Accordion",
+    "description": "A functional FAQ component built using semantic HTML5 details and summary elements. Focuses on accessible design, hover states for interactivity, and responsive layouts using CSS Grid.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 15,
+    "slug": "interactive-rating-component",
+    "title": "Interactive Rating Component",
+    "description": "A clean, accessible rating component that captures user feedback. Features a custom radio-button scale, state-swapping with JavaScript, and a 95% accessibility score via Lighthouse.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 14,
+    "slug": "frontend-quiz-app",
+    "title": "Frontend Quiz App",
+    "description": "A functional multi-choice quiz application featuring category selection, progress tracking, and score calculation.",
+    "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
+    "difficulty": "Intermediate",
+    "status": "Completed"
+  },
+  {
+    "id": 13,
+    "slug": "password-generator-app",
+    "title": "Password Generator App",
+    "description": "A functional password generator application that lets the user generate a password based on selected options, copy it to the clipboard and see a strength rating.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "difficulty": "Intermediate",
+    "status": "Completed"
+  },
+  {
+    "id": 12,
+    "slug": "tip-calculator-app",
+    "title": "Tip Calculator App",
+    "description": "A tip calculator that splits a bill between any number of people. Features live calculation, preset and custom tip percentages, input validation and a reset button.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "difficulty": "Junior",
+    "status": "Completed"
+  },
+  {
+    "id": 11,
+    "slug": "time-tracking-dashboard",
+    "title": "Time Tracking Dashboard",
+    "description": "A dashboard that switches activity stats between daily, weekly and monthly views. Data is loaded from a JSON file and rendered dynamically into the cards.",
+    "technologies": ["HTML", "CSS", "JavaScript", "JSON"],
+    "difficulty": "Intermediate",
+    "status": "Completed"
+  },
+  {
+    "id": 10,
+    "slug": "newsletter-sign-up",
+    "title": "Newsletter Sign-up Form",
+    "description": "A newsletter sign-up form with email validation, clear error messaging and a success state that confirms the subscription.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "difficulty": "Junior",
+    "status": "Completed"
+  },
+  {
+    "id": 9,
+    "slug": "article-preview-component",
+    "title": "Article Preview Component",
+    "description": "An article card with a share button that reveals a social links popup. Focuses on toggling UI state with JavaScript and adapting the layout between mobile and desktop.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "difficulty": "Junior",
+    "status": "Completed"
+  },
+  {
+    "id": 8,
+    "slug": "meet-landing-page",
+    "title": "Meet Landing Page",
+    "description": "A multi-section marketing landing page with a responsive layout, decorative background patterns and a clear call to action.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 7,
+    "slug": "testimonials-grid-section",
+    "title": "Testimonials Grid Section",
+    "description": "A testimonials section built on CSS Grid, with cards that rearrange cleanly from a single column on mobile to a multi-column layout on desktop.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 6,
+    "slug": "four-card-feature-section",
+    "title": "Four Card Feature Section",
+    "description": "A feature section made of four cards with coloured accents. Focuses on CSS Grid layouts and keeping spacing consistent across screen sizes.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 5,
+    "slug": "product-preview-card-component",
+    "title": "Product Preview Card Component",
+    "description": "A product card that swaps its image between mobile and desktop using the picture element. Covers responsive images, typography and hover states.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "slug": "recipe-page-main",
+    "title": "Recipe Page",
+    "description": "A content-heavy recipe page that practises semantic HTML, lists, tables and readable typography.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "slug": "social-links-profiles",
+    "title": "Social Links Profile",
+    "description": "A clean, card-based profile layout featuring a collection of social links. This project focuses on mastering basic CSS Flexbox, semantic navigation lists, and hover state transitions for interactive elements.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "slug": "blog-preview-card",
+    "title": "Blog Preview Card",
+    "description": "A responsive content card featuring a clean layout and hover states. Focuses on foundational CSS skills like box-shadow techniques, custom typography, and semantic HTML structure using the time element.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  },
+  {
+    "id": 1,
+    "slug": "qr-code-component",
+    "title": "QR Code Component",
+    "description": "A fundamental layout challenge focused on CSS positioning, border-radius, and responsive typography. Utilizes semantic HTML structure with figure and figcaption for optimal SEO and accessibility.",
+    "technologies": ["HTML", "CSS"],
+    "difficulty": "Newbie",
+    "status": "Completed"
+  }
+]

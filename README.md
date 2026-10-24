@@ -1,36 +1,35 @@
 # Frontend Mentor: Technical Solutions Gallery
 
-A centralized repository documenting the implementation of responsive UI components and logic-heavy web applications. This project serves as a technical showcase of frontend patterns, accessibility standards, and clean code practices without the use of frameworks.
+A centralized gallery of my [Frontend Mentor](https://www.frontendmentor.io/profile/TumeloLutaka) solutions: responsive UI components and logic-heavy web apps built with vanilla HTML, CSS and JavaScript.
 
-## 1. Core Architecture
+## How it works
 
-The gallery is built to be data-driven. Project information is managed via a centralized `content.json` file, which is fetched and rendered dynamically to the DOM. This allows for:
+The gallery itself is a small **React (Vite)** app. Each challenge is a **standalone static page** that the gallery only links to, so the two never share styles or scripts.
 
-- **Scalability:** Adding new projects requires zero HTML changes.
-- **Consistency:** Uniform card layouts and metadata across the entire gallery.
-- **Maintainability:** Separation of concerns between project data and UI logic.
+- **Gallery:** `src/`, organised with EBI (Entity-Boundary-Interactor) layers.
+- **Challenges:** `public/solutions/<slug>/`, each one opens on its own at `/solutions/<slug>/`. That is the URL used in Frontend Mentor submissions.
+- **Registry:** `public/data/content.json` lists every challenge. Adding a challenge needs one JSON entry plus a thumbnail.
 
-## 2. Technical Stack
+## Getting started
 
-- **Typography:** Inter (Variable) via Google Fonts.
-- **Styles:** Modern CSS (CSS Grid, Flexbox, Custom Properties).
-- **Logic:** Vanilla JavaScript (ES6+, Async/Await, Fetch API).
-- **Design System:** Nature-inspired palette focused on readability and organic UI patterns.
+```bash
+npm install
+npm run dev       # http://localhost:5173
+npm run build     # production build in dist/
+```
 
-## 3. Implementation Focus
+## Hosting
 
-- **Semantic HTML:** Prioritizing screen-reader accessibility and SEO.
-- **Responsive Engineering:** Using `clamp()`, `ch` units, and fluid layouts.
-- **State Management:** Handling UI states (like the Progress Bar in the Quiz App) through modular JS functions.
+Deploys to Netlify as-is (`netlify.toml` is included): build command `npm run build`, publish directory `dist`.
 
-## 4. Current Projects
+## Stack
 
-- **Frontend Quiz App:** A multi-step interactive quiz featuring dynamic state handling and JSON data fetching.
+- **UI:** React + Vite
+- **Styles:** Modern CSS (custom properties, `oklch()`, Grid, Flexbox), dark and light themes
+- **Typography:** Inter via Google Fonts
+- **Challenges:** Vanilla HTML, CSS and JavaScript
 
-## 5. Status
-
-**Current Phase:** Active Development (1/?? Challenges)
-This repository is a work in progress as I continue to solve and document more complex challenges from the Frontend Mentor curriculum.
+For contributor and AI-agent conventions, see [agent.md](./agent.md).
 
 ---
 

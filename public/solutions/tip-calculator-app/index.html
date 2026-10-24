@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./main.js"></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>SPLI<span>TTER</span></h1>
+
+      <article class="calculator">
+        <section class="calculator__section-bill">
+          <div class="calculator__input-group">
+            <label class="calculator__input-label" for="calculator__input-bill">
+              Bill
+            </label>
+
+            <div class="calculator__input-wrapper">
+              <img src="./images/icon-dollar.svg" alt="" />
+              <input
+                id="calculator__input-bill"
+                class="calculator__input"
+                type="number"
+                min="1"
+                placeholder="0"
+              />
+            </div>
+          </div>
+
+          <fieldset class="calculator__fieldset">
+            <legend class="calculator__input-label">Select Tip %</legend>
+
+            <!-- <div class="calculator__fieldset-inputs"> -->
+            <input
+              id="calculator__fieldset-radio1"
+              class="calculator__fieldset-radio"
+              type="radio"
+              name="tip"
+              value="0.05"
+            />
+            <label for="calculator__fieldset-radio1">5%</label>
+
+            <input
+              id="calculator__fieldset-radio2"
+              class="calculator__fieldset-radio"
+              type="radio"
+              name="tip"
+              value="0.10"
+            />
+            <label for="calculator__fieldset-radio2">10%</label>
+
+            <input
+              id="calculator__fieldset-radio3"
+              class="calculator__fieldset-radio"
+              type="radio"
+              name="tip"
+              value="0.15"
+            />
+            <label for="calculator__fieldset-radio3">15%</label>
+
+            <input
+              id="calculator__fieldset-radio4"
+              class="calculator__fieldset-radio"
+              type="radio"
+              name="tip"
+              value="0.25"
+            />
+            <label for="calculator__fieldset-radio4">25%</label>
+
+            <input
+              id="calculator__fieldset-radio5"
+              class="calculator__fieldset-radio"
+              type="radio"
+              name="tip"
+              value="0.5"
+            />
+            <label for="calculator__fieldset-radio5">50%</label>
+
+            <input
+              id="calculator__fieldset-number"
+              class="calculator__fieldset-number"
+              type="number"
+              min="1"
+              name="custom-tip"
+              placeholder="Custom"
+            />
+            <!-- </div> -->
+          </fieldset>
+
+          <div class="calculator__input-group">
+            <label
+              class="calculator__input-label"
+              for="calculator__input-people"
+            >
+              <span>Number of People</span>
+              <span
+                id="calculator__text-error"
+                class="calculator__text-error hidden"
+                >Can't be Zero</span
+              >
+            </label>
+
+            <div
+              id="calculator__input-wrapper_1"
+              class="calculator__input-wrapper"
+            >
+              <img src="./images/icon-person.svg" alt="" />
+              <input
+                id="calculator__input-people"
+                class="calculator__input"
+                type="number"
+                min="1"
+                placeholder="0"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="calculator__section-total">
+          <div class="calculator__text-wrapper">
+            <div class="calculator__cash">
+              <p class="calculator__text-cash">
+                Tip Amount <span>/ person</span>
+              </p>
+              <p class="calculator__cash-num">
+                $<span id="calculator__span-tip">0.00</span>
+              </p>
+            </div>
+
+            <div class="calculator__cash">
+              <p class="calculator__text-cash">Total <span>/ person</span></p>
+              <p class="calculator__cash-num">
+                $<span id="calculator__span-total">0.00</span>
+              </p>
+            </div>
+          </div>
+
+          <button
+            id="calculator__button-reset"
+            class="calculator__button-reset"
+          >
+            RESET
+          </button>
+        </section>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/TumeloLutaka/tip-calculator-app"
+        >Tumelo Lutaka</a> | <a href="../../">Back to Gallery</a>.
+    </footer>
+  </body>
+</html>

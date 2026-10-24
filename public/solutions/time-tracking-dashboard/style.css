@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Conversions Pixel to Rem */
+  --ptr-8: 0.5rem;
+  --ptr-14: 0.875rem;
+  --ptr-16: 1rem;
+  --ptr-18: 1.125rem;
+  --ptr-22: 1.375rem;
+  --ptr-24: 1.5rem;
+  --ptr-32: 2rem;
+
+  /* Conversions Pixel to Em */
+  --pte-24: 1.5em;
+  --pte-32: 2em;
+
+  /* Border Radius */
+  --br-200: var(--ptr-8);
+
+  /* Colors */
+  --clr-purple-600: hsl(246, 80%, 60%);
+  --clr-purple-500: hsl(235, 45%, 61%);
+
+  --clr-orange-300: hsl(15, 100%, 70%);
+  --clr-blue-300: hsl(195, 74%, 62%);
+  --clr-pink-400: hsl(348, 100%, 68%);
+  --clr-green-400: hsl(145, 58%, 55%);
+  --clr-purple-700: hsl(264, 64%, 52%);
+  --clr-yellow-300: hsl(43, 84%, 65%);
+
+  --clr-navy-950: hsl(226, 43%, 10%);
+  --clr-navy-900: hsl(235, 46%, 20%);
+  --clr-navy-200: hsl(236, 100%, 87%);
+  --clr-white: #fff;
+
+  /* Font Size */
+  --fs-caption: var(--ptr-14);
+  --fs-base: var(--ptr-18);
+  --fs-heading: var(--ptr-22);
+
+  /* Font Weight */
+  --fw-light: 300;
+
+  /* Padding */
+  --padding-500: var(--pte-24);
+  --padding-600: var(--pte-32);
+
+  /* Spacing */
+  --spacing-300: var(--ptr-8);
+  --spacing-400: var(--ptr-16);
+  --spacing-500: var(--ptr-24);
+  --spacing-600: var(--ptr-32);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--fs-base);
+  line-height: 1.5;
+  background-color: var(--clr-navy-950);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.dashboard {
+  display: grid;
+  gap: var(--spacing-600);
+  padding: var(--spacing-600);
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.dashboard__card {
+  position: relative;
+  display: grid;
+  padding-top: 48px;
+  color: var(--clr-white);
+  border-radius: var(--br-200);
+  overflow: hidden;
+}
+
+.dashboard__card--work {
+  background-color: var(--clr-orange-300);
+}
+.dashboard__card--play {
+  background-color: var(--clr-blue-300);
+}
+.dashboard__card--study {
+  background-color: var(--clr-pink-400);
+}
+.dashboard__card--exercise {
+  background-color: var(--clr-green-400);
+}
+.dashboard__card--social {
+  background-color: var(--clr-purple-700);
+}
+.dashboard__card--self-care {
+  background-color: var(--clr-yellow-300);
+}
+
+.dashboard__card > img {
+  position: absolute;
+  top: -10px;
+  right: 24px;
+}
+
+.dashboard__card-content {
+  position: relative;
+  display: grid;
+  gap: var(--spacing-300);
+  padding: var(--padding-500);
+  background-color: var(--clr-navy-900);
+  border-radius: var(--br-200);
+  z-index: 1;
+}
+
+.dashboard__card-content:hover {
+  background-color: var(--clr-purple-500);
+  cursor: pointer;
+}
+
+.dashboard__card-content > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard__card-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-light);
+}
+
+.dashboard__card-stats > p:is(:first-child) {
+  font-size: var(--ptr-32);
+}
+
+.dashboard__card-stats > p + p {
+  font-size: var(--fs-caption);
+  color: var(--clr-navy-200);
+}
+
+.dashboard__header {
+  background-color: var(--clr-navy-900);
+  border-radius: var(--br-200);
+}
+
+.dashboard__header-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-600);
+}
+
+.dashboard__header-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--clr-purple-500);
+}
+
+.dashboard__header-btn:hover,
+.dashboard__header-btn.active {
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+.dashboard__header-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-500);
+  padding: var(--spacing-600);
+  background-color: var(--clr-purple-600);
+  color: var(--clr-white);
+  border-radius: var(--br-200);
+}
+
+.dashboard__header-profile > img {
+  height: 64px;
+  aspect-ratio: 1;
+  border: 3px solid var(--clr-white);
+  border-radius: 50%;
+}
+
+.dashboard__header-text > h1 {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-light);
+}
+
+.dashboard__header-text > p {
+  font-size: var(--fs-caption);
+  color: var(--clr-navy-200);
+}
+
+@media (min-width: 48em) {
+  :root {
+    --fs-heading: var(--ptr-32);
+  }
+
+  .dashboard {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .dashboard__card-stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard__header {
+    grid-row: 1 / 3;
+  }
+
+  .dashboard__header-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-500);
+  }
+
+  .dashboard__header-profile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 64px;
+  }
+}

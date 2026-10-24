@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script defer src="./main.js"></script>
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="dashboard">
+        <header class="dashboard__header">
+          <div class="dashboard__header-profile">
+            <img src="./images/image-jeremy.png" alt="User: Jeremy" />
+            <div class="dashboard__header-text">
+              <p>Report for</p>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+
+          <div id="dashboard__header-buttons" class="dashboard__header-buttons">
+            <button class="dashboard__header-btn active">Daily</button>
+            <button class="dashboard__header-btn">Weekly</button>
+            <button class="dashboard__header-btn">Monthly</button>
+          </div>
+        </header>
+
+        <div class="dashboard__card dashboard__card--work">
+          <img src="./images/icon-work.svg" alt="" />
+          <div class="dashboard__card-content">
+            <header>
+              <p>Work</p>
+              <div class="dashboard__card-ellipses">
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+            </header>
+            <div class="dashboard__card-stats">
+              <p>
+                <span class="dashboard__stat--current" data-category="work"
+                  >36</span
+                >hrs
+              </p>
+              <p>
+                Last Week -
+                <span class="dashboard__stat--previous" data-category="work"
+                  >5</span
+                >hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card dashboard__card--play">
+          <img src="./images/icon-play.svg" alt="" />
+          <div class="dashboard__card-content">
+            <header>
+              <p>Play</p>
+              <div class="dashboard__card-ellipses">
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+            </header>
+            <div class="dashboard__card-stats">
+              <p>
+                <span class="dashboard__stat--current" data-category="play"
+                  >36</span
+                >hrs
+              </p>
+              <p>
+                Last Week -
+                <span class="dashboard__stat--previous" data-category="play"
+                  >5</span
+                >hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card dashboard__card--study">
+          <img src="./images/icon-study.svg" alt="" />
+          <div class="dashboard__card-content">
+            <header>
+              <p>Study</p>
+              <div class="dashboard__card-ellipses">
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+            </header>
+            <div class="dashboard__card-stats">
+              <p>
+                <span class="dashboard__stat--current" data-category="study"
+                  >36</span
+                >hrs
+              </p>
+              <p>
+                Last Week -
+                <span class="dashboard__stat--previous" data-category="study"
+                  >5</span
+                >hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card dashboard__card--exercise">
+          <img src="./images/icon-exercise.svg" alt="" />
+          <div class="dashboard__card-content">
+            <header>
+              <p>Exercise</p>
+              <div class="dashboard__card-ellipses">
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+            </header>
+            <div class="dashboard__card-stats">
+              <p>
+                <span class="dashboard__stat--current" data-category="exercise"
+                  >36</span
+                >hrs
+              </p>
+              <p>
+                Last Week -
+                <span class="dashboard__stat--previous" data-category="exercise"
+                  >5</span
+                >hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card dashboard__card--social">
+          <img src="./images/icon-social.svg" alt="" />
+          <div class="dashboard__card-content">
+            <header>
+              <p>Social</p>
+              <div class="dashboard__card-ellipses">
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+            </header>
+            <div class="dashboard__card-stats">
+              <p>
+                <span class="dashboard__stat--current" data-category="social"
+                  >36</span
+                >hrs
+              </p>
+              <p>
+                Last Week -
+                <span class="dashboard__stat--previous" data-category="social"
+                  >5</span
+                >hrs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__card dashboard__card--self-care">
+          <img src="./images/icon-self-care.svg" alt="" />
+          <div class="dashboard__card-content">
+            <header>
+              <p>Self Care</p>
+              <div class="dashboard__card-ellipses">
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+            </header>
+            <div class="dashboard__card-stats">
+              <p>
+                <span class="dashboard__stat--current" data-category="self care"
+                  >36</span
+                >hrs
+              </p>
+              <p>
+                Last Week -
+                <span
+                  class="dashboard__stat--previous"
+                  data-category="self care"
+                  >5</span
+                >hrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tumelo Lutaka</a> | <a href="../../">Back to Gallery</a>.
+    </div>
+  </body>
+</html>
